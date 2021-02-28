@@ -2,7 +2,7 @@
   "name": "verstka",
   "version": "1.0.0",
   "description": "",
-  "main": "index.ejs",
+  "main": "server.js",
   "homepage": "https://github.com/oleksandr-kupenko/DB2-template",
   "scripts": {
     "build-css": "node-sass --output src/css src/scss",
