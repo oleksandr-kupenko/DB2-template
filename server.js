@@ -5,7 +5,7 @@ const path = require('path');
 const app = express();
 const reload = require('reload');
 
-const port = process.env.PORT || 3001;
+const PORT = process.env.PORT || 3001;
 
 app.use(express.static(path.join(__dirname, '/src')));
 app.set('views', './src');
@@ -38,5 +38,5 @@ app.engine('html', require('ejs').renderFile);
 
 const server = http.createServer(app);
 
-server.listen((process.env.PORT, '0.0.0.0'), () => console.log(`running dev server on PORT ${port}`));
+server.listen(PORT, () => console.log(`running dev server on PORT ${PORT}`));
 reload(app);
