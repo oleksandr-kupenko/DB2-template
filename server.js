@@ -38,5 +38,5 @@ app.engine('html', require('ejs').renderFile);
 
 const server = http.createServer(app);
 
-server.listen(port, () => console.log(`running dev server on PORT ${port}`));
+server.listen((process.env.PORT, '0.0.0.0'), () => console.log(`running dev server on PORT ${port}`));
 reload(app);

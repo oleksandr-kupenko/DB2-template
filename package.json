@@ -7,7 +7,8 @@
   "scripts": {
     "build-css": "node-sass --output src/css src/scss",
     "watch": "nodemon",
-    "start": "nodemon server.js"
+    "start": "nodemon server.js",
+    "deploy": "gh-pages -d build"
   },
   "repository": {
     "type": "git",
