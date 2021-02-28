@@ -1,0 +1,32 @@
+{
+  "name": "verstka",
+  "version": "1.0.0",
+  "description": "",
+  "main": "server.js",
+  "scripts": {
+    "build-css": "node-sass --output src/css src/scss",
+    "watch": "nodemon",
+    "start": "nodemon server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/oleksandr-kupenko/DB2-template.git"
+  },
+  "author": "Aleksandr Kupenko",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/oleksandr-kupenko/DB2-template/issues"
+  },
+  "homepage": "https://github.com/oleksandr-kupenko/DB2-template#readme",
+  "dependencies": {
+    "browser-sync": "^2.26.14",
+    "express": "^4.17.1",
+    "livereload": "^0.9.1",
+    "node-sass": "^5.0.0",
+    "nodemon": "^2.0.7",
+    "reload": "^3.1.1"
+  },
+  "devDependencies": {
+    "prettier": "2.2.1"
+  }
+}
