@@ -9,7 +9,7 @@ const PORT = process.env.PORT || 3001;
 
 app.use(express.static(path.join(__dirname, '/src')));
 app.set('views', './src');
-
+app.set('view engine', 'ejs');
 app.get('/', function (req, res) {
   res.render('index');
 });
@@ -32,11 +32,5 @@ pagesArr.forEach((page) => {
   });
 });
 
-app.set('view engine', 'ejs');
-
-app.engine('html', require('ejs').renderFile);
-
-const server = http.createServer(app);
 //port to Port
-server.listen(PORT, () => console.log(`running dev server on PORT ${PORT}`));
-reload(app);
+app.listen(PORT, () => console.log(`running dev server on PORT ${PORT}`));
