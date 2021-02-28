@@ -2,7 +2,8 @@
   "name": "verstka",
   "version": "1.0.0",
   "description": "",
-  "main": "server.js",
+  "main": "index.ejs",
+  "homepage": "https://github.com/oleksandr-kupenko/DB2-template",
   "scripts": {
     "build-css": "node-sass --output src/css src/scss",
     "watch": "nodemon",
@@ -17,7 +18,6 @@
   "bugs": {
     "url": "https://github.com/oleksandr-kupenko/DB2-template/issues"
   },
-  "homepage": "https://github.com/oleksandr-kupenko/DB2-template#readme",
   "dependencies": {
     "browser-sync": "^2.26.14",
     "express": "^4.17.1",

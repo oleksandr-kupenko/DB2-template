@@ -41,6 +41,7 @@ body {
   padding: 72px 116px 80px; }
 
 .sm-form__title {
+  max-width: 373px;
   font-family: 'Exo 2';
   font-size: 28px;
   font-style: normal;
