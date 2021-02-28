@@ -14,8 +14,22 @@ app.get('/', function (req, res) {
   res.render('index');
 });
 
-app.get('/pages/*', function (req, res) {
-  res.render('pages/sign-in');
+const pagesArr = [];
+
+const pagesFolder = './src/pages/';
+const fs = require('fs');
+
+fs.readdirSync(pagesFolder).forEach((fileName) => {
+  if (fileName.includes('ejs')) {
+    let shortName = fileName.replace('.ejs', '');
+    pagesArr.push(shortName);
+  }
+});
+
+pagesArr.forEach((page) => {
+  app.get(`/pages/${page}`, function (req, res) {
+    res.render(`pages/${page}`);
+  });
 });
 
 app.set('view engine', 'ejs');
