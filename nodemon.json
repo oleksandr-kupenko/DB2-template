@@ -1,8 +1,8 @@
 {
     "verbose": true,
     "quiet": false,
-    "server": "./src/index.html",
+    "server": "./src/index.ejs",
     "watch": ["./"],
-    "ext": "js, scss, html",
+    "ext": "js, scss, html, ejs",
     "exec": "npm run build-css && node server.js"
   }
