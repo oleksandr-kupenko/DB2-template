@@ -1,0 +1,27 @@
+.header {
+  width: 100%; }
+
+.header-row {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 137px 0 141px; }
+
+.logo {
+  width: 138px;
+  height: 36px; }
+
+.logo img {
+  width: 100%; }
+
+.sign-link {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 300;
+  font-size: 16px;
+  line-height: 19px;
+  letter-spacing: 0.28px;
+  color: #222428; }
+  .sign-link a {
+    font-weight: 700;
+    color: #062fb3;
+    text-decoration: none; }

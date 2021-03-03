@@ -1,8 +1,0 @@
-{
-    "verbose": true,
-    "quiet": false,
-    "server": "./src/index.html",
-    "watch": ["./"],
-    "ext": "js, scss, html",
-    "exec": "npm run build-css && node server.js"
-  }
