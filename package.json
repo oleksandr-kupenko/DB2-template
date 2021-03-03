@@ -1,13 +1,16 @@
 {
   "name": "verstka",
-  "version": "1.0.0",
+  "version": "1.2.0",
   "description": "",
-  "main": "server.js",
+  "main": "index.js",
   "homepage": "https://github.com/oleksandr-kupenko/DB2-template",
   "scripts": {
-    "build-css": "node-sass --output src/css src/scss",
-    "start": "nodemon server.js"
+    "lint": "sass-lint -v",
+    "lint:fix": "sass-lint-auto-fix",
+    "deploy": "gh-pages -d dist",
+    "start": "gulp & gulp watch"
   },
+  "sasslintConfig": ".sasslintrc.json",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/oleksandr-kupenko/DB2-template.git"
@@ -17,16 +20,19 @@
   "bugs": {
     "url": "https://github.com/oleksandr-kupenko/DB2-template/issues"
   },
-  "dependencies": {
-    "browser-sync": "^2.26.14",
-    "express": "^4.17.1",
-    "livereload": "^0.9.1",
-    "node-sass": "^5.0.0",
-    "nodemon": "^2.0.7",
-    "reload": "^3.1.1"
-  },
+  "dependencies": {},
   "devDependencies": {
-    "ejs": "^3.1.6",
-    "prettier": "2.2.1"
+    "browser-sync": "^2.26.14",
+    "browserslist": "^4.16.3",
+    "caniuse-lite": "^1.0.30001194",
+    "gh-pages": "^3.1.0",
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^7.0.1",
+    "gulp-clean-css": "^4.3.0",
+    "gulp-nunjucks": "^5.1.0",
+    "gulp-sass": "^4.1.0",
+    "node-sass": "^5.0.0",
+    "sass-lint": "^1.13.1",
+    "sass-lint-auto-fix": "^0.21.2"
   }
 }
