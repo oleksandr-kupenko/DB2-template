@@ -25,6 +25,7 @@ function style() {
 }
 
 function nunjucks() {
+  gulp.src('./src/pages/index.html').pipe(njk.compile()).pipe(gulp.dest('dist')).pipe(browserSync.stream());
   gulp.src('./src/pages/*.html').pipe(njk.compile()).pipe(gulp.dest('dist/pages')).pipe(browserSync.stream());
 }
 
