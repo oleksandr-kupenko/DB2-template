@@ -6,9 +6,7 @@
   "homepage": "https://github.com/oleksandr-kupenko/DB2-template",
   "scripts": {
     "build-css": "node-sass --output src/css src/scss",
-    "watch": "nodemon",
-    "start": "nodemon server.js",
-    "deploy": "gh-pages -d build"
+    "start": "nodemon server.js"
   },
   "repository": {
     "type": "git",
