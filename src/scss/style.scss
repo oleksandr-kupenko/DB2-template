@@ -2,12 +2,22 @@
   box-sizing: border-box;
 }
 
+.m-0 {
+  margin: 0 !important;
+}
+
 body {
   background: #f9fafc;
   font-family: Roboto;
 }
 
+.main-container {
+  display: flex;
+  min-height: 80vh;
+}
+
 .form {
+  margin: auto;
   background: #ffffff;
   box-shadow: 0px 5px 40px rgba(0, 45, 113, 0.06);
   border-radius: 10px;
@@ -46,7 +56,6 @@ body {
 
 .sm-form {
   width: 632px;
-  margin: 178px auto;
   padding: 72px 116px 80px;
 }
 
@@ -163,11 +172,10 @@ body {
     left: 0;
     height: 25px;
     width: 25px;
-    border: 2px solid #F2F2F2;
+    border: 2px solid #f2f2f2;
     border-radius: 2px;
   }
 
- 
   input:checked ~ .checkmark {
     background-color: rgba(245, 247, 250, 0.5);
   }
@@ -184,7 +192,7 @@ body {
     top: 1px;
     width: 5px;
     height: 12px;
-    border: solid #0AD69C;
+    border: solid #0ad69c;
     border-width: 0px 3px 3px 0px;
     -webkit-transform: rotate(45deg);
     -ms-transform: rotate(45deg);
@@ -194,6 +202,39 @@ body {
 
 [type='checkbox'] {
   vertical-align: middle;
+}
+
+.g-recaptcha {
+  margin-bottom: -25px;
+  transform: scale(0.692);
+  transform-origin: 0;
+  -webkit-transform: scale(0.692);
+  transform: scale(0.692);
+  -webkit-transform-origin: 0 0;
+  transform-origin: 0 0;
+}
+
+.pass-indicator {
+  height: 6px;
+  display: flex;
+  width: 100%;
+  justify-content: inherit;
+  margin: 7px 0 22px;
+  & span {
+    flex-grow: 1;
+    max-width: 32%;
+    border-radius: 2px;
+    background: #ebeff3;
+  }
+  & .pass-indicator__red {
+    background: #FF6359;
+  }
+  & .pass-indicator__orange {
+    background: #FFB966;;
+  }
+  & .pass-indicator__green {
+    background: #38ECAC;
+  }
 }
 
 //@import 'nullstyle';

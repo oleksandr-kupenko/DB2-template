@@ -1,6 +1,5 @@
 const gulp = require('gulp');
 const sass = require('gulp-sass');
-const pug = require('gulp-pug');
 const njk = require('gulp-nunjucks');
 const cleanCSS = require('gulp-clean-css');
 const autoprefixer = require('gulp-autoprefixer');
@@ -42,8 +41,8 @@ function watch() {
       index: 'pages/index.html',
     },
   });
-  gulp.watch('./src/scss/**/.scss', style);
-  gulp.watch('./src/partials/*.html', nunjucks);
+  gulp.watch('./src/scss/.scss', style);
+  gulp.watch('./src/pages/*.html', nunjucks);
 }
 
 exports.style = style;
