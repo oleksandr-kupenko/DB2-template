@@ -1,5 +1,5 @@
-## Simple html+css templates for DB2 project
+## Simple html+css then nunjucks and gulp
 
 [Link to deploy](https://oleksandr-kupenko.github.io/DB2-template/)
 
-Из-за неправильных путей в шапке нарушена навигация и отображение лого. Поправлю все – с завтрашнего дня у меня будет время каждый день.
+#Верстка здесь не готова и нарушены пути некоторые (лого и т.п.). Конечный вариант доделан на вебпаке.
