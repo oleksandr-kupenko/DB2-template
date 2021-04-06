@@ -2,4 +2,4 @@
 
 [Link to deploy](https://oleksandr-kupenko.github.io/DB2-template/)
 
-# Верстка здесь не готова и нарушены пути некоторые (лого и т.п.). Конечный вариант доделан на вебпаке.
+# has problem with path layout (wrong path to some files). Last version without problems you can see in [webpack](https://github.com/oleksandr-kupenko/db2-webpack) or [koa](https://github.com/oleksandr-kupenko/koa-demo-db2).
